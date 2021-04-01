@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			font-family: Papyrus;
+			font-size: 25px;
+			color: white;
+			background-color: black;
+			
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#checkBtn').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
+
+      if(!checked) {
+        alert("You must check at least one checkbox.");
+        return false;
+      }
+
+    });
+});
+
+</script>
+
+	<form align="center" action="buying form.html">
+		<tr>
+			<img src="hrudyaphoto12.jpg">
+			<input type="checkbox" name="checkbox">
+			<label>$5.00</label>
+		</tr>
+		<tr>
+			<img src="hrudyaphoto13.jpg">
+			<input type="checkbox" name="checkbox">
+			<label>$6.00</label>
+		</tr>
+		<br>
+		<tr>
+			<img src="hrudyaphoto14.jpg">
+			<input type="checkbox" name="checkbox">
+			<label>$5.00</label>
+		</tr>
+		<tr>
+			<img src="hrudyaphoto15.jpg">
+			<input type="checkbox" name="checkbox">
+			<label>$7.00</label>
+		</tr>
+		<center>
+		<button type="Buy Me" id="checkBtn">Buy Me</button>
+		</center>
+	</form>
+</body>
+</html>
